@@ -18,8 +18,8 @@ class MyDB {
                 return "Connected successfully";
             }
             else {
-			    return "Already connected to a database.";
-			}
+		return "Already connected to a database.";
+	    }
         }
         catch(PDOException $e) {
             return "Connection failed: ".$e -> getMessage();
